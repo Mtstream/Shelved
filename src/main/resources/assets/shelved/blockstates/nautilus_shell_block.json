@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+    {
+      "model": "shelved:block/nautilus_shell"
+    },
+    {
+      "model": "shelved:block/nautilus_shell",
+      "y":90
+    },
+    {
+      "model": "shelved:block/nautilus_shell",
+      "y":180
+    },
+    {
+      "model": "shelved:block/nautilus_shell",
+      "y":270
+    }
+    ]
+  }
+}

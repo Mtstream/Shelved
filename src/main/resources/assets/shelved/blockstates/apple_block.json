@@ -1,0 +1,10 @@
+{
+	"variants":{
+		"vertical_direction=up":{
+			"model":"shelved:block/placed_apple_hanging"
+		},
+		"vertical_direction=down":{
+			"model":"shelved:block/placed_apple"
+		}
+	}
+}

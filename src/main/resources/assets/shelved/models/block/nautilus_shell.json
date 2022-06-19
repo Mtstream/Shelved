@@ -1,0 +1,21 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "shelved:block/nautilus_shell",
+		"particle": "shelved:block/nautilus_shell"
+	},
+	"elements": [
+		{
+			"from": [3, 0, 3],
+			"to": [13, 4, 13],
+			"faces": {
+				"north": {"uv": [6, 10, 16, 14], "texture": "#0"},
+				"east": {"uv": [6, 10, 16, 14], "texture": "#0"},
+				"south": {"uv": [6, 10, 16, 14], "texture": "#0"},
+				"west": {"uv": [2, 10, 6, 0], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [6, 0, 16, 10], "texture": "#0"},
+				"down": {"uv": [6, 0, 16, 10], "texture": "#0"}
+			}
+		}
+	]
+}

@@ -2,6 +2,7 @@ package com.mtstream.shelved.event;
 
 import com.mtstream.shelved.PlaceableItemsMap;
 import com.mtstream.shelved.Shelved;
+import com.mtstream.shelved.init.BlockInit;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
@@ -9,6 +10,7 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
@@ -30,7 +32,9 @@ public class RightClickEvt {
 		Level lev = evt.getWorld();
 		BlockState state = lev.getBlockState(pos);
 		Block blk = PlaceableItemsMap.getBlock(stack.getItem());
-		if(blk != null) {
+		if((lev.getBlockState(pos).is(BlockInit.PLACED_SNOWBALL.get())&&stack.is(Items.SNOWBALL))||(lev.getBlockState(pos).is(BlockInit.PLACED_COOKIE.get())&&stack.is(Items.COOKIE))) {
+			
+		}else if(blk != null) {
 			InteractionResult res = ((BlockItem) blk.asItem()).place(new BlockPlaceContext(new UseOnContext(pla, han, new BlockHitResult(pla.getLookAngle(), evt.getFace(), pos, false))));
 			evt.setCanceled(res == InteractionResult.SUCCESS);
 			evt.setCancellationResult(res);

@@ -1,0 +1,28 @@
+{
+	"variants":{
+		"count=1":{
+			"model":"shelved:block/placed_cookie_1"
+		},
+		"count=2":{
+			"model":"shelved:block/placed_cookie_2"
+		},
+		"count=3":{
+			"model":"shelved:block/placed_cookie_3"
+		},
+		"count=4":{
+			"model":"shelved:block/placed_cookie_4"
+		},
+		"count=5":{
+			"model":"shelved:block/placed_cookie_5"
+		},
+		"count=6":{
+			"model":"shelved:block/placed_cookie_6"
+		},
+		"count=7":{
+			"model":"shelved:block/placed_cookie_7"
+		},
+		"count=8":{
+			"model":"shelved:block/placed_cookie_8"
+		}
+	}
+}

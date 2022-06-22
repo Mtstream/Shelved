@@ -6,8 +6,11 @@ import com.google.common.base.Function;
 import com.google.common.base.Supplier;
 import com.mtstream.shelved.Shelved;
 import com.mtstream.shelved.block.PlacedAppleBlock;
+import com.mtstream.shelved.block.PlacedCookieBlock;
 import com.mtstream.shelved.block.PlacedNautilusShellBlock;
 import com.mtstream.shelved.block.PlacedNetherStarBlock;
+import com.mtstream.shelved.block.PlacedPotionBlock;
+import com.mtstream.shelved.block.PlacedSnowBallBlock;
 
 import it.unimi.dsi.fastutil.objects.Object2BooleanArrayMap;
 import it.unimi.dsi.fastutil.objects.Object2ObjectArrayMap;
@@ -37,8 +40,17 @@ public class BlockInit {
 	public static final RegistryObject<Block> PLACED_ENCHANTED_GOLDEN_APPLE = register("enchanted_golden_apple_block",
 			() -> new PlacedAppleBlock(BlockBehaviour.Properties.copy(Blocks.MUSHROOM_STEM).dynamicShape(), Items.ENCHANTED_GOLDEN_APPLE), 
 			object -> () -> new BlockItem(object.get(), new Item.Properties()));
+	public static final RegistryObject<Block> PLACED_SNOWBALL = register("snowball_block",
+			() -> new PlacedSnowBallBlock(BlockBehaviour.Properties.copy(Blocks.SNOW).dynamicShape(), Items.SNOWBALL), 
+			object -> () -> new BlockItem(object.get(), new Item.Properties()));
+	public static final RegistryObject<Block> PLACED_COOKIE = register("cookie_block",
+			() -> new PlacedCookieBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL).dynamicShape(), Items.COOKIE), 
+			object -> () -> new BlockItem(object.get(), new Item.Properties()));
 	public static final RegistryObject<Block> PLACED_NETHER_STAR = register("nether_star_block",
 			() -> new PlacedNetherStarBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).dynamicShape().noCollission().emissiveRendering((s,l,p)->true).lightLevel(s->5), Items.NETHER_STAR), 
+			object -> () -> new BlockItem(object.get(), new Item.Properties()));
+	public static final RegistryObject<Block> PLACED_POTION = register("placed_potion",
+			() -> new PlacedPotionBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).dynamicShape(), Items.POTION), 
 			object -> () -> new BlockItem(object.get(), new Item.Properties()));
 	
 	

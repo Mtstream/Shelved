@@ -1,0 +1,13 @@
+{
+	"variants":{
+		"size=1":{
+			"model":"shelved:block/placed_snowball_1"
+		},
+		"size=2":{
+			"model":"shelved:block/placed_snowball_2"
+		},
+		"size=3":{
+			"model":"shelved:block/placed_snowball_3"
+		}
+	}
+}

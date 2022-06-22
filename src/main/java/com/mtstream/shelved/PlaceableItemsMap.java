@@ -15,6 +15,8 @@ public class PlaceableItemsMap {
 		map.put(Items.APPLE, BlockInit.PLACED_APPLE.get());
 		map.put(Items.GOLDEN_APPLE, BlockInit.PLACED_GOLDEN_APPLE.get());
 		map.put(Items.ENCHANTED_GOLDEN_APPLE, BlockInit.PLACED_ENCHANTED_GOLDEN_APPLE.get());
+		map.put(Items.SNOWBALL, BlockInit.PLACED_SNOWBALL.get());
+		map.put(Items.COOKIE, BlockInit.PLACED_COOKIE.get());
 		return map.get(item);
 	}
 }

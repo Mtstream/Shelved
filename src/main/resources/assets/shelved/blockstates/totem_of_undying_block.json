@@ -1,0 +1,19 @@
+{
+	"variants":{
+		"facing=north":{
+			"model":"shelved:block/placed_totem_of_undying"
+		},
+		"facing=east":{
+			"model":"shelved:block/placed_totem_of_undying",
+			"y":90
+		},
+		"facing=south":{
+			"model":"shelved:block/placed_totem_of_undying",
+			"y":180
+		},
+		"facing=west":{
+			"model":"shelved:block/placed_totem_of_undying",
+			"y":270
+		}
+	}
+}

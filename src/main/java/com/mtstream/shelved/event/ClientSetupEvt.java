@@ -20,6 +20,7 @@ public class ClientSetupEvt {
 			ItemBlockRenderTypes.setRenderLayer(BlockInit.PLACED_APPLE.get(), RenderType.cutout());
 			ItemBlockRenderTypes.setRenderLayer(BlockInit.PLACED_GOLDEN_APPLE.get(), RenderType.cutout());
 			ItemBlockRenderTypes.setRenderLayer(BlockInit.PLACED_ENCHANTED_GOLDEN_APPLE.get(), RenderType.cutout());
+			ItemBlockRenderTypes.setRenderLayer(BlockInit.PLACED_POTION.get(), RenderType.cutout());
 		}
 	}
 }

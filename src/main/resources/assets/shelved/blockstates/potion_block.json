@@ -1,0 +1,10 @@
+{
+	"variants":{
+		"has_effect=true":{
+			"model":"shelved:block/placed_potion"
+		},
+		"has_effect=false":{
+			"model":"shelved:block/placed_potion_noeffect"
+		}
+	}
+}

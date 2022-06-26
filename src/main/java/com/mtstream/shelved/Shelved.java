@@ -1,5 +1,6 @@
 package com.mtstream.shelved;
 
+import com.mtstream.shelved.init.BlockEntityInit;
 import com.mtstream.shelved.init.BlockInit;
 import com.mtstream.shelved.init.FeatureInit;
 import com.mtstream.shelved.init.ItemInit;
@@ -17,6 +18,7 @@ public class Shelved {
 		ItemInit.ITEMS.register(bus);
 		BlockInit.BLOCKS.register(bus);
 		FeatureInit.FEATURE.register(bus);
+		BlockEntityInit.BLOCK_ENTITY.register(bus);
 		MinecraftForge.EVENT_BUS.register(bus);
 	}
 }

@@ -11,6 +11,10 @@ A Minecraft mod that allows some items to be placed.
 →/  
   
 ![nautilus_shell.png](https://github.com/Mtstream/Shelved/blob/main/src/main/resources/assets/shelved/textures/item/nautilus_shell.png) - **Nautilus Shell**  
-→Can be found under the sea. 
+→Can be found under the sea.  
+**Cookie**  
+**Snow Ball**  
+**Compass**  
+**Bread**  
 -
 wip

@@ -1,0 +1,19 @@
+{
+	"variants":{
+		"facing=north":{
+			"model":"shelved:block/placed_pufferfish"
+		},
+		"facing=east":{
+			"model":"shelved:block/placed_pufferfish",
+			"y":90
+		},
+		"facing=south":{
+			"model":"shelved:block/placed_pufferfish",
+			"y":180
+		},
+		"facing=west":{
+			"model":"shelved:block/placed_pufferfish",
+			"y":270
+		}
+	}
+}

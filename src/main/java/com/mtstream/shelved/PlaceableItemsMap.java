@@ -19,6 +19,9 @@ public class PlaceableItemsMap {
 		map.put(Items.COOKIE, BlockInit.PLACED_COOKIE.get());
 		map.put(Items.POTION, BlockInit.PLACED_POTION.get());
 		map.put(Items.TOTEM_OF_UNDYING, BlockInit.PLACED_TOTEM_OF_UNDYING.get());
+		map.put(Items.COMPASS, BlockInit.PLACED_COMPASS.get());
+		map.put(Items.BREAD, BlockInit.PLACED_BREAD.get());
+		map.put(Items.PUFFERFISH, BlockInit.PLACED_PUFFERFISH.get());
 		return map.get(item);
 	}
 }

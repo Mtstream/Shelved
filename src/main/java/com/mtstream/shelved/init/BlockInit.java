@@ -6,12 +6,16 @@ import com.google.common.base.Function;
 import com.google.common.base.Supplier;
 import com.mtstream.shelved.Shelved;
 import com.mtstream.shelved.block.PlacedAppleBlock;
+import com.mtstream.shelved.block.PlacedBreadBlock;
+import com.mtstream.shelved.block.PlacedCompassBlock;
 import com.mtstream.shelved.block.PlacedCookieBlock;
 import com.mtstream.shelved.block.PlacedNautilusShellBlock;
 import com.mtstream.shelved.block.PlacedNetherStarBlock;
 import com.mtstream.shelved.block.PlacedPotionBlock;
+import com.mtstream.shelved.block.PlacedPufferFishBlock;
 import com.mtstream.shelved.block.PlacedSnowBallBlock;
 import com.mtstream.shelved.block.PlacedTotemOfUndyingBlock;
+import com.mtstream.shelved.util.ModSoundTypes;
 
 import it.unimi.dsi.fastutil.objects.Object2BooleanArrayMap;
 import it.unimi.dsi.fastutil.objects.Object2ObjectArrayMap;
@@ -48,6 +52,12 @@ public class BlockInit {
 	public static final RegistryObject<Block> PLACED_COOKIE = register("cookie_block",
 			() -> new PlacedCookieBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL).dynamicShape(), Items.COOKIE), 
 			object -> () -> new BlockItem(object.get(), new Item.Properties()));
+	public static final RegistryObject<Block> PLACED_COMPASS = register("compass_block",
+			() -> new PlacedCompassBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).dynamicShape(), Items.COMPASS), 
+			object -> () -> new BlockItem(object.get(), new Item.Properties()));
+	public static final RegistryObject<Block> PLACED_BREAD = register("bread_block",
+			() -> new PlacedBreadBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL).dynamicShape(), Items.BREAD), 
+			object -> () -> new BlockItem(object.get(), new Item.Properties()));
 	public static final RegistryObject<Block> PLACED_TOTEM_OF_UNDYING = register("totem_of_undying_block",
 			() -> new PlacedTotemOfUndyingBlock(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).dynamicShape(), Items.TOTEM_OF_UNDYING), 
 			object -> () -> new BlockItem(object.get(), new Item.Properties()));
@@ -56,6 +66,9 @@ public class BlockInit {
 			object -> () -> new BlockItem(object.get(), new Item.Properties()));
 	public static final RegistryObject<Block> PLACED_POTION = register("potion_block",
 			() -> new PlacedPotionBlock(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK).instabreak().sound(SoundType.GLASS).dynamicShape(), Items.POTION), 
+			object -> () -> new BlockItem(object.get(), new Item.Properties()));
+	public static final RegistryObject<Block> PLACED_PUFFERFISH = register("pufferfish_block",
+			() -> new PlacedPufferFishBlock(BlockBehaviour.Properties.copy(Blocks.SLIME_BLOCK).instabreak().sound(ModSoundTypes.PUFFERFISH).dynamicShape(), Items.PUFFERFISH), 
 			object -> () -> new BlockItem(object.get(), new Item.Properties()));
 	
 	

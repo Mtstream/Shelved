@@ -35,7 +35,7 @@ public class RightClickEvt {
 		Level lev = evt.getWorld();
 		BlockState state = lev.getBlockState(pos);
 		Block blk = PlaceableItemsMap.getBlock(stack.getItem());
-		if((lev.getBlockState(pos).is(BlockInit.PLACED_SNOWBALL.get())&&stack.is(Items.SNOWBALL))||(lev.getBlockState(pos).is(BlockInit.PLACED_COOKIE.get())&&stack.is(Items.COOKIE))) {
+		if((lev.getBlockState(pos).is(BlockInit.PLACED_SNOWBALL.get())&&stack.is(Items.SNOWBALL))||(lev.getBlockState(pos).is(BlockInit.PLACED_COOKIE.get())&&stack.is(Items.COOKIE)||(lev.getBlockState(pos).is(BlockInit.PLACED_BREAD.get())&&stack.is(Items.BREAD)))) {
 			
 		}else if(blk != null&&!pla.isCrouching()) {
 			InteractionResult res = ((BlockItem) blk.asItem()).place(new BlockPlaceContext(new UseOnContext(pla, han, new BlockHitResult(pla.getLookAngle(), evt.getFace(), pos, false))));

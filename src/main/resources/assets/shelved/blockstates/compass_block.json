@@ -1,0 +1,28 @@
+{
+	"variants":{
+		"direction=1":{
+			"model":"shelved:block/placed_compass_s"
+		},
+		"direction=2":{
+			"model":"shelved:block/placed_compass_sw"
+		},
+		"direction=3":{
+			"model":"shelved:block/placed_compass_w"
+		},
+		"direction=4":{
+			"model":"shelved:block/placed_compass_nw"
+		},
+		"direction=5":{
+			"model":"shelved:block/placed_compass_n"
+		},
+		"direction=6":{
+			"model":"shelved:block/placed_compass_ne"
+		},
+		"direction=7":{
+			"model":"shelved:block/placed_compass_e"
+		},
+		"direction=8":{
+			"model":"shelved:block/placed_compass_se"
+		}
+	}
+}

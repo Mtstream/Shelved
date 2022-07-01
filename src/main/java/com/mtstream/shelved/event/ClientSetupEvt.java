@@ -18,10 +18,14 @@ public class ClientSetupEvt {
 		public static void clienSetup(FMLClientSetupEvent event) {
 			ItemBlockRenderTypes.setRenderLayer(BlockInit.PLACED_NETHER_STAR.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(BlockInit.PLACED_APPLE.get(), RenderType.cutout());
+			ItemBlockRenderTypes.setRenderLayer(BlockInit.PLACED_CHORUS_FRUIT.get(), RenderType.cutout());
 			ItemBlockRenderTypes.setRenderLayer(BlockInit.PLACED_GOLDEN_APPLE.get(), RenderType.cutout());
 			ItemBlockRenderTypes.setRenderLayer(BlockInit.PLACED_ENCHANTED_GOLDEN_APPLE.get(), RenderType.cutout());
 			ItemBlockRenderTypes.setRenderLayer(BlockInit.PLACED_POTION.get(), RenderType.cutout());
 			ItemBlockRenderTypes.setRenderLayer(BlockInit.PLACED_PUFFERFISH.get(), RenderType.cutout());
+			ItemBlockRenderTypes.setRenderLayer(BlockInit.PLACED_GLASS_BOTTLE.get(), RenderType.cutout());
+			ItemBlockRenderTypes.setRenderLayer(BlockInit.PLACED_XP_BOTTLE.get(), RenderType.cutout());
+			ItemBlockRenderTypes.setRenderLayer(BlockInit.PLACED_DRAGON_BREATH.get(), RenderType.cutout());
 		}
 	}
 }

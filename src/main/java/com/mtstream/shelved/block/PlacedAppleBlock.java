@@ -1,5 +1,7 @@
 package com.mtstream.shelved.block;
 
+import com.mtstream.shelved.util.VoxelShapes;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.Item;
@@ -23,7 +25,7 @@ public class PlacedAppleBlock extends WaterPlacedItemBlock{
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter p_60556_, BlockPos p_60557_,
 			CollisionContext p_60558_) {
-		return state.getValue(FACING)==Direction.DOWN?Shapes.box(0.25, 0, 0.25, 0.75, 0.5, 0.75):Shapes.box(0.25, 0.3125, 0.25, 0.75, 0.8125, 0.75);
+		return state.getValue(FACING)==Direction.DOWN?VoxelShapes.SHAPE404888:VoxelShapes.SHAPE454888;
 	}
 	
 	@Override

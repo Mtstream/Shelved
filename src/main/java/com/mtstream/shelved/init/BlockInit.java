@@ -6,6 +6,7 @@ import com.google.common.base.Function;
 import com.google.common.base.Supplier;
 import com.mtstream.shelved.Shelved;
 import com.mtstream.shelved.block.PlacedAppleBlock;
+import com.mtstream.shelved.block.PlacedBottleBlock;
 import com.mtstream.shelved.block.PlacedBreadBlock;
 import com.mtstream.shelved.block.PlacedCompassBlock;
 import com.mtstream.shelved.block.PlacedCookieBlock;
@@ -40,6 +41,9 @@ public class BlockInit {
 	public static final RegistryObject<Block> PLACED_APPLE = register("apple_block",
 			() -> new PlacedAppleBlock(BlockBehaviour.Properties.copy(Blocks.MUSHROOM_STEM).dynamicShape(), Items.APPLE), 
 			object -> () -> new BlockItem(object.get(), new Item.Properties()));
+	public static final RegistryObject<Block> PLACED_CHORUS_FRUIT = register("chorus_fruit_block",
+			() -> new PlacedAppleBlock(BlockBehaviour.Properties.copy(Blocks.MUSHROOM_STEM).dynamicShape(), Items.CHORUS_FRUIT), 
+			object -> () -> new BlockItem(object.get(), new Item.Properties()));
 	public static final RegistryObject<Block> PLACED_GOLDEN_APPLE = register("golden_apple_block",
 			() -> new PlacedAppleBlock(BlockBehaviour.Properties.copy(Blocks.MUSHROOM_STEM).dynamicShape(), Items.GOLDEN_APPLE), 
 			object -> () -> new BlockItem(object.get(), new Item.Properties()));
@@ -66,6 +70,15 @@ public class BlockInit {
 			object -> () -> new BlockItem(object.get(), new Item.Properties()));
 	public static final RegistryObject<Block> PLACED_POTION = register("potion_block",
 			() -> new PlacedPotionBlock(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK).instabreak().sound(SoundType.GLASS).dynamicShape(), Items.POTION), 
+			object -> () -> new BlockItem(object.get(), new Item.Properties()));
+	public static final RegistryObject<Block> PLACED_GLASS_BOTTLE = register("glass_bottle_block",
+			() -> new PlacedBottleBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).instabreak().dynamicShape(), Items.GLASS_BOTTLE), 
+			object -> () -> new BlockItem(object.get(), new Item.Properties()));
+	public static final RegistryObject<Block> PLACED_XP_BOTTLE = register("experience_bottle_block",
+			() -> new PlacedBottleBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).instabreak().dynamicShape(), Items.EXPERIENCE_BOTTLE), 
+			object -> () -> new BlockItem(object.get(), new Item.Properties()));
+	public static final RegistryObject<Block> PLACED_DRAGON_BREATH = register("dragon_breath_block",
+			() -> new PlacedBottleBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).instabreak().dynamicShape(), Items.DRAGON_BREATH), 
 			object -> () -> new BlockItem(object.get(), new Item.Properties()));
 	public static final RegistryObject<Block> PLACED_PUFFERFISH = register("pufferfish_block",
 			() -> new PlacedPufferFishBlock(BlockBehaviour.Properties.copy(Blocks.SLIME_BLOCK).instabreak().sound(ModSoundTypes.PUFFERFISH).dynamicShape(), Items.PUFFERFISH), 

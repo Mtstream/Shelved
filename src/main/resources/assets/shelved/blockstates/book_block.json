@@ -1,0 +1,34 @@
+{
+	"variants":{
+		"facing=north,opened=true":{
+			"model":"shelved:block/placed_book_opened"
+		},
+		"facing=east,opened=true":{
+			"model":"shelved:block/placed_book_opened",
+			"y":90
+		},
+		"facing=south,opened=true":{
+			"model":"shelved:block/placed_book_opened",
+			"y":180
+		},
+		"facing=west,opened=true":{
+			"model":"shelved:block/placed_book_opened",
+			"y":270
+		},
+		"facing=north,opened=false":{
+			"model":"shelved:block/placed_book_closed"
+		},
+		"facing=east,opened=false":{
+			"model":"shelved:block/placed_book_closed",
+			"y":90
+		},
+		"facing=south,opened=false":{
+			"model":"shelved:block/placed_book_closed",
+			"y":180
+		},
+		"facing=west,opened=false":{
+			"model":"shelved:block/placed_book_closed",
+			"y":270
+		}
+	}
+}

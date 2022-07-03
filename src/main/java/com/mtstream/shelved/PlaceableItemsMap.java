@@ -26,6 +26,8 @@ public class PlaceableItemsMap {
 		map.put(Items.GLASS_BOTTLE, BlockInit.PLACED_GLASS_BOTTLE.get());
 		map.put(Items.EXPERIENCE_BOTTLE, BlockInit.PLACED_XP_BOTTLE.get());
 		map.put(Items.DRAGON_BREATH, BlockInit.PLACED_DRAGON_BREATH.get());
+		map.put(Items.BOOK, BlockInit.PLACED_BOOK.get());
+		map.put(Items.ENCHANTED_BOOK, BlockInit.PLACED_ENCHANTED_BOOK.get());
 		return map.get(item);
 	}
 }

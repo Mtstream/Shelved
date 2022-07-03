@@ -6,10 +6,12 @@ import com.google.common.base.Function;
 import com.google.common.base.Supplier;
 import com.mtstream.shelved.Shelved;
 import com.mtstream.shelved.block.PlacedAppleBlock;
+import com.mtstream.shelved.block.PlacedBookBlock;
 import com.mtstream.shelved.block.PlacedBottleBlock;
 import com.mtstream.shelved.block.PlacedBreadBlock;
 import com.mtstream.shelved.block.PlacedCompassBlock;
 import com.mtstream.shelved.block.PlacedCookieBlock;
+import com.mtstream.shelved.block.PlacedEnchantedBookBlock;
 import com.mtstream.shelved.block.PlacedNautilusShellBlock;
 import com.mtstream.shelved.block.PlacedNetherStarBlock;
 import com.mtstream.shelved.block.PlacedPotionBlock;
@@ -54,13 +56,13 @@ public class BlockInit {
 			() -> new PlacedSnowBallBlock(BlockBehaviour.Properties.copy(Blocks.SNOW).dynamicShape(), Items.SNOWBALL), 
 			object -> () -> new BlockItem(object.get(), new Item.Properties()));
 	public static final RegistryObject<Block> PLACED_COOKIE = register("cookie_block",
-			() -> new PlacedCookieBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL).dynamicShape(), Items.COOKIE), 
+			() -> new PlacedCookieBlock(BlockBehaviour.Properties.copy(Blocks.ORANGE_WOOL).dynamicShape(), Items.COOKIE), 
 			object -> () -> new BlockItem(object.get(), new Item.Properties()));
 	public static final RegistryObject<Block> PLACED_COMPASS = register("compass_block",
 			() -> new PlacedCompassBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).dynamicShape(), Items.COMPASS), 
 			object -> () -> new BlockItem(object.get(), new Item.Properties()));
 	public static final RegistryObject<Block> PLACED_BREAD = register("bread_block",
-			() -> new PlacedBreadBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL).dynamicShape(), Items.BREAD), 
+			() -> new PlacedBreadBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).dynamicShape(), Items.BREAD), 
 			object -> () -> new BlockItem(object.get(), new Item.Properties()));
 	public static final RegistryObject<Block> PLACED_TOTEM_OF_UNDYING = register("totem_of_undying_block",
 			() -> new PlacedTotemOfUndyingBlock(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).dynamicShape(), Items.TOTEM_OF_UNDYING), 
@@ -80,8 +82,14 @@ public class BlockInit {
 	public static final RegistryObject<Block> PLACED_DRAGON_BREATH = register("dragon_breath_block",
 			() -> new PlacedBottleBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).instabreak().dynamicShape(), Items.DRAGON_BREATH), 
 			object -> () -> new BlockItem(object.get(), new Item.Properties()));
+	public static final RegistryObject<Block> PLACED_BOOK = register("book_block",
+			() -> new PlacedBookBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).instabreak().dynamicShape(), Items.BOOK), 
+			object -> () -> new BlockItem(object.get(), new Item.Properties()));
+	public static final RegistryObject<Block> PLACED_ENCHANTED_BOOK = register("enchanted_book_block",
+			() -> new PlacedEnchantedBookBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).instabreak().dynamicShape(), Items.ENCHANTED_BOOK), 
+			object -> () -> new BlockItem(object.get(), new Item.Properties()));
 	public static final RegistryObject<Block> PLACED_PUFFERFISH = register("pufferfish_block",
-			() -> new PlacedPufferFishBlock(BlockBehaviour.Properties.copy(Blocks.SLIME_BLOCK).instabreak().sound(ModSoundTypes.PUFFERFISH).dynamicShape(), Items.PUFFERFISH), 
+			() -> new PlacedPufferFishBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL).instabreak().sound(ModSoundTypes.PUFFERFISH).dynamicShape(), Items.PUFFERFISH), 
 			object -> () -> new BlockItem(object.get(), new Item.Properties()));
 	
 	

@@ -12,6 +12,7 @@ import com.mtstream.shelved.block.PlacedBreadBlock;
 import com.mtstream.shelved.block.PlacedCompassBlock;
 import com.mtstream.shelved.block.PlacedCookieBlock;
 import com.mtstream.shelved.block.PlacedEnchantedBookBlock;
+import com.mtstream.shelved.block.PlacedFireChargeBlock;
 import com.mtstream.shelved.block.PlacedNautilusShellBlock;
 import com.mtstream.shelved.block.PlacedNetherStarBlock;
 import com.mtstream.shelved.block.PlacedPotionBlock;
@@ -90,6 +91,9 @@ public class BlockInit {
 			object -> () -> new BlockItem(object.get(), new Item.Properties()));
 	public static final RegistryObject<Block> PLACED_PUFFERFISH = register("pufferfish_block",
 			() -> new PlacedPufferFishBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL).instabreak().sound(ModSoundTypes.PUFFERFISH).dynamicShape(), Items.PUFFERFISH), 
+			object -> () -> new BlockItem(object.get(), new Item.Properties()));
+	public static final RegistryObject<Block> PLACED_FIRE_CHARGE = register("fire_charge_block",
+			() -> new PlacedFireChargeBlock(BlockBehaviour.Properties.copy(Blocks.BASALT).instabreak().dynamicShape(), Items.FIRE_CHARGE), 
 			object -> () -> new BlockItem(object.get(), new Item.Properties()));
 	
 	

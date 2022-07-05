@@ -28,6 +28,7 @@ public class PlaceableItemsMap {
 		map.put(Items.DRAGON_BREATH, BlockInit.PLACED_DRAGON_BREATH.get());
 		map.put(Items.BOOK, BlockInit.PLACED_BOOK.get());
 		map.put(Items.ENCHANTED_BOOK, BlockInit.PLACED_ENCHANTED_BOOK.get());
+		map.put(Items.FIRE_CHARGE, BlockInit.PLACED_FIRE_CHARGE.get());
 		return map.get(item);
 	}
 }
